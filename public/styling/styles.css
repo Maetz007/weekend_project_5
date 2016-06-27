@@ -1,0 +1,62 @@
+body {
+  background: linear-gradient(#B7DEFF 40%, #36B772 100%);
+  border: 5px;
+}
+
+h1 {
+  height: auto;
+  text-align: center;
+  font-size: 46px;
+  font-family: Copperplate, "Copperplate Gothic Light", fantasy;
+  text-decoration-color: #2268FF;
+}
+
+#inputDiv{
+  width:300px;
+  margin:auto;
+}
+
+input{
+   text-align:center;
+}
+
+#addBtn{
+  margin: auto auto 12px auto;
+  position: relative;
+  left: 46.5%;
+  background-color: #AF6619;
+  text-align: center;
+  font-size: 14px;
+  color: white;
+}
+
+#repeatDiv{
+  text-align: center;
+  font-size: 18px;
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  border: 3px dotted #DF692E;
+}
+
+#deleteBtn{
+  margin: 4px auto 15px auto;
+  background-color: #BB3316;
+  text-align: center;
+  font-size: 12px;
+  color: white;
+}
+
+#nameIn, #typeIn, #ageIn, #urlIn{
+  /*position: relative;*/
+  /*left: 35%;*/
+  width: 300px;
+  height: 27px;
+  border: 2px solid #73865A
+}
+
+#display{
+  font-size: 12px;
+}
+
+/*.row {
+  overflow: auto;
+}*/

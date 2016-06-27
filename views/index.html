@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+  <head>
+    <meta charset="utf-8">
+    <title>http//:localhost/inClassAssignmentByLannyMaetzold.awesomesauce</title>
+    <script src="vendors/angular.min.js"></script>
+    <script src="scripts/scripts.js"></script>
+      <link rel="stylesheet" href="vendors/bootstrap.min.css">
+      <link rel="stylesheet" href="styling/styles.css">
+  </head>
+  <body>
+    <div class="container" ng-controller="animalInfo">
+
+    <h1>Welcome to the Barnyard Nu gang!</h1>
+
+    <div id="inputDiv">
+      <input type="text" id="nameIn" ng-model="animalNameInput" placeholder="Input name of animal"><br>
+      <input type="text" id="typeIn" ng-model="animalTypeInput" placeholder="Input animal type"><br>
+      <input type="text" id="ageIn" ng-model="animalAgeInput" placeholder="Input age of animal if known"><br>
+      <input type="text" id="urlIn" ng-model="animalUrlInput" placeholder="URL picture of animal type"><br><br>
+    </div> <!-- end input div -->
+
+      <button id="addBtn" ng-click="addAnimal()">Add Animal</button><br>
+
+    <div class="row">
+      <div ng-repeat="animals in showAnimals">
+        <div class="clearfix" ng-if="$index % 3 == 0"></div>
+        <div class="col-sm-4" id="repeatDiv">
+          <p><small id="display">Name:</small> {{animals.animal_name}} <small id="display">Type:</small>
+            {{animals.animal_type}} <small id="display">Age:</small> {{animals.animal_age}}</p>
+          <img ng-src={{animals.animal_url}}/><br>
+          <button id="deleteBtn" ng-click="deleteAnimal($index)">DELETE</button>
+        </div> <!-- end col-sm-4 div -->
+      </div> <!-- end ng-repeat div -->
+    </div> <!-- end class=row div -->
+
+    </div> <!-- end ng-controller animalInfo -->
+
+  </body>
+</html>
