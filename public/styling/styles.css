@@ -44,7 +44,7 @@ input{
   text-align: center;
   font-size: 18px;
   font-family: "Comic Sans MS", cursive, sans-serif;
-  border: 3px dotted #DF692E;
+  /*border: 3px dotted #DF692E;*/
 }
 
 #deleteBtn{
@@ -53,6 +53,11 @@ input{
   text-align: center;
   font-size: 12px;
   color: white;
+}
+
+#fenceDiv{
+  margin: 5px auto 10 px auto;
+  border: 10px dotted #DF692E;
 }
 
 #nameIn, #typeIn, #ageIn, #urlIn{

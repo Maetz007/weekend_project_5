@@ -23,18 +23,20 @@
       <button id="addBtn" ng-click="addAnimal()">Add New Animal</button>
       <button id="sortBtn" ng-click="sortAnimal()">Sort Alphabetically</button><br>
 
-    <div class="row">
-      <div ng-repeat="animals in showAnimals">
-        <!-- clearfix and the ng-if set the columns to max 3 on every row -->
-        <div class="clearfix" ng-if="$index % 3 == 0"></div>
-        <div class="col-sm-4" id="repeatDiv">
-          <p><small id="display">Name:</small> {{animals.animal_name}} <small id="display">Type:</small>{{animals.animal_type}} <small id="display">Age:</small> {{animals.animal_age}}</p>
-          <img ng-src={{animals.animal_url}}/><br>
-          <!-- the delete button iterates with each repeat and uses $index to associate a unique identifierfor deletion -->
-          <button id="deleteBtn" ng-click="deleteAnimal($index)">DELETE</button>
-        </div> <!-- end col-sm-4 div -->
-      </div> <!-- end ng-repeat div -->
-    </div> <!-- end class=row div -->
+    <div id="fenceDiv">
+      <div class="row">
+        <div ng-repeat="animals in showAnimals">
+          <!-- clearfix and the ng-if set the columns to max 3 on every row -->
+          <div class="clearfix" ng-if="$index % 3 == 0"></div>
+          <div class="col-sm-4" id="repeatDiv">
+            <p><small id="display">Name:</small> {{animals.animal_name}} <small id="display">Type:</small>{{animals.animal_type}} <small id="display">Age:</small> {{animals.animal_age}}</p>
+            <img ng-src={{animals.animal_url}}/><br>
+            <!-- the delete button iterates with each repeat and uses $index to associate a unique identifierfor deletion -->
+            <button id="deleteBtn" ng-click="deleteAnimal($index)">DELETE</button>
+          </div> <!-- end col-sm-4 div -->
+        </div> <!-- end ng-repeat div -->
+      </div> <!-- end class=row div -->
+    </div> <!-- end fence div -->
 
     </div> <!-- end ng-controller animalInfo -->
 
