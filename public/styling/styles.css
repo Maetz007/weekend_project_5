@@ -1,6 +1,5 @@
 body {
   background: linear-gradient(#B7DEFF 40%, #36B772 100%);
-  border: 5px;
 }
 
 h1 {
@@ -16,6 +15,7 @@ h1 {
   margin:auto;
 }
 
+/* aligns placeholder text*/
 input{
    text-align:center;
 }
@@ -23,7 +23,17 @@ input{
 #addBtn{
   margin: auto auto 12px auto;
   position: relative;
-  left: 46.5%;
+  left: 35%;
+  background-color: #AF6619;
+  text-align: center;
+  font-size: 14px;
+  color: white;
+}
+
+#sortBtn{
+  margin: auto auto 12px auto;
+  position: relative;
+  left: 42%;
   background-color: #AF6619;
   text-align: center;
   font-size: 14px;
@@ -46,8 +56,6 @@ input{
 }
 
 #nameIn, #typeIn, #ageIn, #urlIn{
-  /*position: relative;*/
-  /*left: 35%;*/
   width: 300px;
   height: 27px;
   border: 2px solid #73865A
@@ -56,7 +64,3 @@ input{
 #display{
   font-size: 12px;
 }
-
-/*.row {
-  overflow: auto;
-}*/
